@@ -31,7 +31,7 @@ jobs:
 
             - name: run docker container
               run: |
-                docker run -d -p 5001:5000 --name notes-api
+                docker run -d -p 5001:5000 notes-api
                 sleep 5
                 curl http://localhost:5001/notes
 
