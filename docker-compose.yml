@@ -1,0 +1,9 @@
+services:
+
+  web:
+    container_name: otes-api
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./data.json:/app/data.json
